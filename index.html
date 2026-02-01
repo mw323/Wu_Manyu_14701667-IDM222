@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+    <div class="navbar">
+        <div class="container">
+            <div class="nav_logo">
+            <a href="index.html"><img src="images/logo-light.svg" alt="logo" class="logo"></a>
+            </div>
+
+            <div class="nav_menu hidden">
+                <a href="index.html" class="nav_link">Home</a>
+                <a href="about.html" class="nav_link">About</a>
+                <a href="projects.html" class="nav_link">Projects</a>
+                <a href="#footer" class="nav_link">Contact</a>
+        </div>
+
+            <div class="nav_icons">
+                <img src="images/Menu-light.svg" alt="menu" class="icon menu">
+                <img src="images/close-light.svg" alt="close" class="icon hide">
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hi, I'm Manyu Wu</h1>
+            <p>I'm a UX/UI designer passionate about creating intuitive and meaningful digital experiences</p>
+        </section>
+
+        <div class="cta_icon">
+            <img src="images/arrow-light.svg" alt="arrow" class="arrow_icon">
+        </div>
+
+        <h2 class="section_title">Featured Projects</h2>
+        <section class="featured_projects">
+        <hr>
+            <div class="case_study">
+                <div class="text_block">
+                    <h3>CASE STUDY//01</h3>
+                    <div class="tags">
+                    <p class="tag">UX/UI</p>
+                    <p class="tag">Redesign</p>
+                    </div>
+                </div> 
+                <div class="text_block2">
+                    <h2>ZARA Website</h2>
+                    <p>A redesign of a fashion e-commerce site, improving text hierarchy, navigation clarity, and product browsing.</p>
+                </div>
+                <div>
+                <a href="zara-case-study.html" class="case_link">View Case Study <span class="arrow">&#8594;</span></a>
+                </div>
+            <picture>
+                <source
+                    media="(min-width: 1024px)"
+                     srcset="images/zara_large.webp" />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="images/zara_medium.webp" />
+                <img
+                    src="images/zara_small.webp"
+                    alt="ZARA website preview"
+                    class="display_image">
+            </picture>
+            </div>     
+            <hr>
+
+            <div class="case_study">
+                <div class="text_block">
+                    <h3>CASE STUDY//02</h3>
+                    <div class="tags">
+                    <p class="tag">UX/UI</p>
+                    <p class="tag">Redesign</p>
+                    <p class="tag">Interaction design</p>
+                    </div>
+                </div> 
+                <div class="text_block2">
+                    <h2>Airbnb App</h2>
+                    <p>A mobile app for planning and booking trips, focusing on user-friendly navigation and seamless booking experiences.</p>
+                </div>
+            <div>
+                <a href="airbnb-case-study.html" class="case_link">View Case Study <span class="arrow">&#8594;</span></a>
+            </div>
+            <picture>
+                <source
+                    media="(min-width: 1024px)"
+                     srcset="images/airbnb_large.webp" />
+                <source
+                    media="(min-width: 768px)"
+                    srcset="images/airbnb_medium.webp" />
+                <img
+                    src="images/airbnb_small.webp"
+                    alt="Airbnb app preview"
+                    class="display_image">
+            </picture>
+            </div>
+        </section>
+            <a href="projects.html" class="button">View All Projects</a>
+    </main>
+
+    <footer id="footer">
+        <h2>Let's get in touch :)</h2>
+        <div class="contact">
+            <a href="mailto:mw3493@drexel.edu" class="contact_link">
+            <img src="images/email.svg" alt="email" class="contact_icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/manyu-wu-b71215334/" class="contact_link" target="_blank">
+            <img src="images/linkedin.svg" alt="linkedin" class="contact_icon">
+            </a>
+        </div>
+        <p>&copy; Manyu Wu 2026</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
