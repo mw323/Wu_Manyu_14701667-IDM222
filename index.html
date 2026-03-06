@@ -15,16 +15,20 @@
             <a href="index.html"><img src="images/logo-light.svg" alt="logo" class="logo"></a>
             </div>
 
-            <div class="nav_menu hidden">
-                <a href="index.html" class="nav_link">Home</a>
-                <a href="about.html" class="nav_link">About</a>
-                <a href="projects.html" class="nav_link">Projects</a>
-                <a href="#footer" class="nav_link">Contact</a>
-        </div>
+            <div class="menu hidden">
+                <a href="index.html" class="menuItem">Home</a>
+                <a href="about.html" class="menuItem">About</a>
+                <a href="projects.html" class="menuItem">Projects</a>
+                <a href="#footer" class="menuItem">Contact</a>
+            </div>
 
-            <div class="nav_icons">
-                <img src="images/Menu-light.svg" alt="menu" class="icon menu">
-                <img src="images/close-light.svg" alt="close" class="icon hide">
+            <div class="hamburger">
+                <svg width="55" height="55" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="menuIcon">
+                <path d="M13.1563 44C12.8279 44 12.5535 43.8762 12.333 43.6285C12.1126 43.3809 12.0016 43.076 12 42.7139C11.9985 42.3518 12.1095 42.0478 12.333 41.8019C12.5566 41.5559 12.831 41.4338 13.1563 41.4355H47.8437C48.1721 41.4355 48.4465 41.5585 48.667 41.8044C48.889 42.0504 49 42.3553 49 42.719C49 43.0828 48.889 43.3868 48.667 43.6311C48.445 43.8753 48.1706 43.9974 47.8437 43.9974L13.1563 44ZM13.1563 31.7797C12.8279 31.7797 12.5535 31.6567 12.333 31.4108C12.1126 31.1648 12.0016 30.8599 12 30.4962C11.9985 30.1324 12.1095 29.8284 12.333 29.5841C12.5566 29.3399 12.831 29.2178 13.1563 29.2178H47.8437C48.1721 29.2178 48.4465 29.3407 48.667 29.5867C48.8874 29.8326 48.9984 30.1375 49 30.5013C49.0015 30.8651 48.8905 31.1691 48.667 31.4133C48.4434 31.6576 48.169 31.7797 47.8437 31.7797H13.1563ZM13.1563 19.5594C12.8279 19.5594 12.5535 19.4372 12.333 19.193C12.111 18.9471 12 18.6422 12 18.2784C12 17.9146 12.111 17.6106 12.333 17.3664C12.555 17.1221 12.8294 17 13.1563 17H47.8437C48.1721 17 48.4465 17.123 48.667 17.3689C48.8874 17.6149 48.9984 17.918 49 18.2784C49.0015 18.6388 48.8905 18.9428 48.667 19.1904C48.4434 19.4381 48.169 19.5611 47.8437 19.5594H13.1563Z" fill="#34566F"/>
+                </svg>
+               <svg width="55" height="55" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="closeIcon">
+                <path d="M17 17L44.9583 44.9583M17 44.9583L44.9583 17" stroke="#34566F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
         </div>
     </div>
@@ -32,83 +36,76 @@
 
     <main>
         <section class="hero">
-            <h1>Hi, I'm Manyu Wu</h1>
-            <p>I'm a UX/UI designer passionate about creating intuitive and meaningful digital experiences</p>
+            <div class="hero_intro">
+                <div class="text_area">
+                    <div class="hero_subtitle">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Hello!</h2>
+                    </div>
+                    <h1>I'm Manyu Wu</h1>
+                    <p>‍I am a <b>UX/UI Designer</b> who loves to create useful, intuitive, and engaging products.</p>
+                    <div class="hero_button">
+                    <a href="about.html" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero_img">
+                    <img src="images/oc.webp" alt="illustration" class="oc">
+                </div>
+          </div>
         </section>
 
-        <div class="cta_icon">
-            <img src="images/arrow-light.svg" alt="arrow" class="arrow_icon">
-        </div>
-
-        <h2 class="section_title">Featured Projects</h2>
-        <section class="featured_projects">
-        <hr>
-            <div class="case_study">
-                <div class="text_block">
-                    <h3>CASE STUDY//01</h3>
-                    <div class="tags">
-                    <p class="tag">UX/UI</p>
-                    <p class="tag">Redesign</p>
-                    </div>
-                </div> 
-                <div class="text_block2">
-                    <h2>ZARA Website</h2>
-                    <p>A redesign of a fashion e-commerce site, improving text hierarchy, navigation clarity, and product browsing.</p>
-                </div>
-                <div>
-                <a href="zara-case-study.html" class="case_link">View Case Study <span class="arrow">&#8594;</span></a>
-                </div>
-            <picture>
-                <source
-                    media="(min-width: 1024px)"
-                     srcset="images/zara_large.webp" />
-                <source
-                    media="(min-width: 768px)"
-                    srcset="images/zara_medium.webp" />
-                <img
-                    src="images/zara_small.webp"
-                    alt="ZARA website preview"
-                    class="display_image">
-            </picture>
-            </div>     
-            <hr>
-
-            <div class="case_study">
-                <div class="text_block">
-                    <h3>CASE STUDY//02</h3>
-                    <div class="tags">
-                    <p class="tag">UX/UI</p>
-                    <p class="tag">Redesign</p>
-                    <p class="tag">Interaction design</p>
-                    </div>
-                </div> 
-                <div class="text_block2">
-                    <h2>Airbnb App</h2>
-                    <p>A mobile app for planning and booking trips, focusing on user-friendly navigation and seamless booking experiences.</p>
-                </div>
-            <div>
-                <a href="airbnb-case-study.html" class="case_link">View Case Study <span class="arrow">&#8594;</span></a>
+            <section class="featured_projects">
+             <div class="section_title">
+                <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                <h2>My Works</h2>
             </div>
-            <picture>
-                <source
-                    media="(min-width: 1024px)"
-                     srcset="images/airbnb_large.webp" />
-                <source
-                    media="(min-width: 768px)"
-                    srcset="images/airbnb_medium.webp" />
-                <img
-                    src="images/airbnb_small.webp"
-                    alt="Airbnb app preview"
-                    class="display_image">
-            </picture>
+                <div class="case_study">
+                    <div class="image_block">
+                    <img src="images/zara_large.webp" alt="ZARA redesign preview" class="display_image">
+                    </div>
+                    <div class="text_block">
+                        <div class="tags">
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">Redesign</span>
+                        </div>
+                        <h2>ZARA Website</h2>
+                        <p>A redesign of a fashion e-commerce site, improving text hierarchy, navigation clarity, and product browsing.</p>
+                        <div class="case_study_btn">
+                        <a href="zara-case-study.html" class="project_link">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider_line">
+                 
+                 <div class="case_study">
+                    <div class="image_block">
+                    <img src="images/airbnb_large.webp" alt="Airbnb redesign preview" class="display_image">
+                    </div>
+                    <div class="text_block">
+                        <div class="tags">
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">Redesign</span>
+                        </div>
+                        <h2>Airbnb App</h2>
+                        <p>A redesign of a travel booking app that enhances browsing and booking with clearer navigation and interactions.</p>
+                        <div class="case_study_btn">
+                        <a href="airbnb-case-study.html" class="project_link">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="project_btn">
+            <a href="projects.html" class="button">See All Works</a>
             </div>
-        </section>
-            <a href="projects.html" class="button">View All Projects</a>
     </main>
 
     <footer id="footer">
-        <h2>Let's get in touch :)</h2>
         <div class="contact">
+            <div class="cta">
+                <h2>Let's get in touch!</h2>
+            </div>
+            <div class="contact_info">
             <a href="mailto:mw3493@drexel.edu" class="contact_link">
             <img src="images/email.svg" alt="email" class="contact_icon">
             </a>
@@ -116,8 +113,20 @@
             <a href="https://www.linkedin.com/in/manyu-wu-b71215334/" class="contact_link" target="_blank">
             <img src="images/linkedin.svg" alt="linkedin" class="contact_icon">
             </a>
+            </div>
         </div>
-        <p>&copy; Manyu Wu 2026</p>
+        <hr>
+        <div class="footer_text">
+            <div class="footer_pages">
+                <a href="index.html" class="pages">Home</a>
+                <a href="about.html" class="pages">About</a>
+                <a href="projects.html" class="pages">Projects</a>
+                <a href="#footer" class="pages">Contact</a>
+                </div>
+            <div class="small_text">
+                <span class>&copy; Manyu Wu 2026</span>
+            </div>
+        </div>
     </footer>
     <script src="main.js"></script>
 </body>
