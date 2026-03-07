@@ -4,8 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb App Redesign</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+    <div class="navbar">
+        <div class="container">
+            <div class="nav_logo">
+            <a href="index.html"><img src="images/logo-light.svg" alt="logo" class="logo"></a>
+            </div>
+
+            <div class="menu hidden">
+                <a href="index.html" class="menuItem">Home</a>
+                <a href="about.html" class="menuItem">About</a>
+                <a href="projects.html" class="menuItem">Projects</a>
+                <a href="mailto:mw3493@drexel.edu" class="menuItem2">Contact</a>
+            </div>
+
+            <div class="hamburger">
+                <svg width="55" height="55" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="menuIcon">
+                <path d="M13.1563 44C12.8279 44 12.5535 43.8762 12.333 43.6285C12.1126 43.3809 12.0016 43.076 12 42.7139C11.9985 42.3518 12.1095 42.0478 12.333 41.8019C12.5566 41.5559 12.831 41.4338 13.1563 41.4355H47.8437C48.1721 41.4355 48.4465 41.5585 48.667 41.8044C48.889 42.0504 49 42.3553 49 42.719C49 43.0828 48.889 43.3868 48.667 43.6311C48.445 43.8753 48.1706 43.9974 47.8437 43.9974L13.1563 44ZM13.1563 31.7797C12.8279 31.7797 12.5535 31.6567 12.333 31.4108C12.1126 31.1648 12.0016 30.8599 12 30.4962C11.9985 30.1324 12.1095 29.8284 12.333 29.5841C12.5566 29.3399 12.831 29.2178 13.1563 29.2178H47.8437C48.1721 29.2178 48.4465 29.3407 48.667 29.5867C48.8874 29.8326 48.9984 30.1375 49 30.5013C49.0015 30.8651 48.8905 31.1691 48.667 31.4133C48.4434 31.6576 48.169 31.7797 47.8437 31.7797H13.1563ZM13.1563 19.5594C12.8279 19.5594 12.5535 19.4372 12.333 19.193C12.111 18.9471 12 18.6422 12 18.2784C12 17.9146 12.111 17.6106 12.333 17.3664C12.555 17.1221 12.8294 17 13.1563 17H47.8437C48.1721 17 48.4465 17.123 48.667 17.3689C48.8874 17.6149 48.9984 17.918 49 18.2784C49.0015 18.6388 48.8905 18.9428 48.667 19.1904C48.4434 19.4381 48.169 19.5611 47.8437 19.5594H13.1563Z" fill="#34566F"/>
+                </svg>
+               <svg width="55" height="55" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="closeIcon">
+                <path d="M17 17L44.9583 44.9583M17 44.9583L44.9583 17" stroke="#34566F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <main class="case-study">
+        <section class="overview">
+            <div class="intro">
+                <div class="intro_subtitle">
+                    <h4>UX/UI // 3 Months // Figma, Jitter</h4>
+                </div>
+                <div class="project_name">
+                    <h1>Airbnb App</h1>
+                </div>
+                <div>
+                    <p>Airbnb is a global platform for booking short-term accommodations and experiences. Despite its convenience and variety of listings, issues like excessive scrolling, scattered information, and limited personalization can make it harder for users to find suitable stays.</p>
+                </div>
+                <div class="prototype_button">
+                    <a href="https://www.figma.com/proto/5qMEfDUKks3OlsmjpldUUa/Airbnb-Redesign-Prototype?node-id=44-1368&t=1bRRziSp4acTu5pe-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=44%3A1368" target="_blank" class="button">View Prototype</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/airbnb_mockup.webp" alt=" airbnb mockup" class="project_img">
+            </div>
+        </section>
+            <hr class="divider_line">
+            <section class="design-process">
+                <div class="section_title2">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Design Process</h2>
+                </div>
+                <div>
+                    <img src="images/design_process.webp" alt="design process" class="project_img">
+                </div>
+            </section>
+            <hr class="divider_line">
+
+            <section class="info-block">
+                <div class="section_title2">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Empathize</h2>
+                </div>
+                <div class="projectInfo">
+                    <div class="info">
+                        <h3>Target Audience</h3>
+                        <p>Airbnb targets modern, experience-driven travelers who value flexibility, unique stays, and a home-like environment. They seek convenient booking, reliable amenities, and authentic local experiences rather than traditional hotel stays.</p>
+                    </div>
+
+                    <div class="info">
+                        <h3>User Persona</h3>
+                        <p>Sophie is a 24-year-old product designer from Atlanta who travels frequently for inspiration and relaxation. She values stylish, convenient, and well-designed stays near city centers, and she wants a smooth browsing experience with clear information and personalized recommendations to quickly find the right place.</p>
+                        <div>
+                            <img src="images/user-persona-airbnb.webp" alt="user persona" class="project_img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="divider_line">
+            <section class="info-block">
+                <div class="section_title2">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Define</h2>
+                </div>
+                <div class="projectInfo">
+                    <div class="info">
+                        <h3>Excessive Scrolling</h3>
+                        <p>The existing homepage presents listings in a long vertical feed with randomized content. Users must continuously scroll to explore different stays, and there is no clear categorization or personalization.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Lacks Information Classification</h3>
+                        <p>Key information — such as amenities, reviews, house rules, and host details is displayed on one long-scrolling page rather than divided into clear sections. As a result, important content becomes difficult to locate, forcing users to scroll continuously until they find what they need.</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="divider_line">
+
+            <section class="info-block">
+                <div class="section_title2">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Ideate</h2>
+                </div>
+                <div class="projectInfo">
+                    <div class="info">
+                        <h3>Solution//01</h3>
+                        <p>Enhance the browsing experience by streamlining how users navigate through listings and minimizing effort during exploration.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Solution//02</h3>
+                        <p>Organize listing details with clear information hierarchy, enabling users to quickly find what they need without endless vertical scrolling.</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="divider_line">
+            <section class="info-block">
+                 <div class="section_title2">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Prototype</h2>
+                </div>
+                <div class="projectInfo2">
+                   <div class="info2">
+                        <div class="demo_text">
+                            <h3>Horizontal layout and categorized browsing</h3>
+                            <p>The homepage was redesigned to include personalized categories such as For You and Popular, helping users quickly discover relevant listings.</p>
+                            <p>A Card Carousel replaced the long vertical feed, allowing users to swipe horizontally to browse listings.</p>
+                            <p>This change reduces excessive scrolling and makes the browsing experience more efficient.</p>
+                        </div>
+                        <div class="demo_video">
+                            <video autoplay loop muted>
+                                <source src="videos/homepage.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="info2">
+                        <div class="demo_text">
+                            <h3>Tabbed information structure</h3>
+                            <p>Listing details were reorganized using a tabbed layout that separates key information into sections such as Overview, Amenities, Reviews, and Policies.</p>
+                            <p>This structure allows users to quickly switch between categories instead of scrolling through a long page.</p>
+                            <p>As a result, users can find the information they need more efficiently.</p>
+                        </div>
+                        <div class="demo_video">
+                            <video autoplay loop muted>
+                                <source src="videos/detail.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="info2">
+                        <div class="demo_text">
+                            <h3>Interaction Enhancement</h3>
+                            <p>While Airbnb’s existing payment process is already functional, I redesigned it to feel more engaging through motion and micro-interactions.</p>
+                            <p>I designed a vertical loop-scrolling card selector allows users to swipe through different payment options smoothly. When a card is selected, it expands to reveal the card information fields and a next button, creating a more seamless checkout experience.</p>
+                        </div>
+                        <div class="demo_video">
+                            <video autoplay loop muted>
+                                <source src="videos/payment.webm" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="divider_line">
+
+            <section class="info-block">
+                <div class="section_title2">
+                    <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
+                    <h2>Test</h2>
+                </div>
+                <div class="projectInfo">
+                    <div class="info">
+                        <h3>Increased browsing efficiency</h3>
+                        <p>The redesigned horizontal layout lets users see more listings at once and find what they want faster, making browsing smoother and easier.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Better information accessibility</h3>
+                        <p>The tabbed function helps users locate information faster and makes the interface cleaner and easier to use.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Positive user feedback</h3>
+                        <p>User testing showed the design felt more intuitive and organized, and my professor praised the payment method interaction as “smooth and enjoyable.”</p>
+                    </div>
+                </div>
+            </section>
+
+        <div class="case_study_link">
+            <a href="zara-case-study.html" class="next_btn">Previous Case Study</a>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="contact">
+            <div class="cta">
+                <h2>Let's get in touch!</h2>
+            </div>
+            <div class="contact_info">
+            <a href="mailto:mw3493@drexel.edu" class="contact_link">
+            <img src="images/email.svg" alt="email" class="contact_icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/manyu-wu-b71215334/" class="contact_link" target="_blank">
+            <img src="images/linkedin.svg" alt="linkedin" class="contact_icon">
+            </a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_text">
+            <div class="footer_pages">
+                <a href="index.html" class="pages">Home</a>
+                <a href="about.html" class="pages">About</a>
+                <a href="projects.html" class="pages">Projects</a>
+                <a href="#footer" class="pages">Contact</a>
+                </div>
+            <div class="small_text">
+                <span class>&copy; Manyu Wu 2026</span>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
