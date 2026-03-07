@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'PlayfairDisplay';
-  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-  font-weight: 400 900;
+  font-family: 'Playfair';
+  src: url("fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+  font-weight: 300 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
-  src: url("fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
-  font-weight: 400 900;
+  font-family: 'Playfair';
+  src: url("fonts/Playfair-Italic-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+  font-weight: 300 900;
   font-style: italic;
 }
 
@@ -41,7 +41,7 @@
     --font-size-button: 1rem;
     --font-size-label: 1rem;
 
-    --font-main: "PlayfairDisplay", "Times New Roman", serif;
+    --font-main: "Playfair", "Times New Roman", serif;
     
     --space-header-paragraph:8px;
     --space-section-vertical:35px;
@@ -115,7 +115,19 @@ main{
     font-family: var(--font-main);
     font-size: 22px;
 }
-
+.menuItem2{
+    text-decoration: none;
+    border: 1px solid var(--font-border-color);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: var(--font-border-color);
+    font-family: var(--font-main);
+    font-size: 22px;
+}
+.menuItem2:hover{
+    background-color: var(--font-border-color);
+    color: white;
+}
 .menuItem:hover{
     text-decoration: underline;
     color: var(--button-color);
@@ -183,7 +195,6 @@ main{
 .button{
     text-decoration: none;
     color: white;
-    width: fit-content;
     border-radius: 30px;
     padding: 10px 24px;
     background-color: var(--button-color);
@@ -235,7 +246,6 @@ main{
 .tag{
     font-size: var(--font-size-label);
     border: 1px solid var(--font-border-color);
-    max-width: fit-content;
     padding: 3px 15px;
     border-radius: 15px;
     margin: 0;
@@ -340,6 +350,67 @@ hr{
 .resume{
     margin: 40px 0 0;
 }
+/* case study page */
+.project_name h1{
+    font-size: var(--small-h1);
+    margin: 15px 0 20px;
+}
+.intro_subtitle h4{
+    font-size: var(--small-subheading);
+    margin: 0;
+}
+.case-study h3{
+    margin: 15px 0;
+}
+.case-study p{
+    line-height: var(--line-height-p);
+    margin: 0 0 15px;
+}
+.info{
+    margin-bottom: 30px;
+}
+.project_img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.prototype_button{
+    margin: 40px 0;
+}
+.design-process{
+    margin-bottom: 20px;
+}
+.section_title2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin: 25px 0;
+}
+.section_title2 h2{
+    margin: 0;
+}
+.case_study_link{
+    text-align: center;
+    margin: 50px 0 0;
+}
+.next_btn{
+    text-decoration: none;
+    color: var(--font-border-color);
+    border: 1px solid var(--font-border-color);
+    padding: 10px;
+}
+.next_btn:hover{
+    background-color: var(--font-border-color);
+    color: white;
+}
+.demo_video{
+    width:300px;
+    margin: 0  auto;
+}
+video{
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
     .container{
         max-width: 90%;
@@ -394,7 +465,7 @@ hr{
         margin: 0;
     }
     .divider_line{
-        margin: 50px 0;
+        margin: 40px 0;
     }
     .project_btn{
         margin-top: 60px;
@@ -435,7 +506,23 @@ hr{
     .intro_paragraphs h3{
         margin: 20px 0;
     }
-    
+    /* case study page */
+    .project_img{
+        margin-top: 20px;
+    }
+    .info2{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+    }
+    .demo_text{
+        width: 400px;
+    }
+    .projectInfo2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -457,9 +544,11 @@ hr{
         visibility: visible;
         transform: none;
         transition: none;
-        z-index: 1;
     }
     .menuItem{
+        font-size: 16px;
+    }
+    .menuItem2{
         font-size: 16px;
     }
     main{
@@ -514,16 +603,54 @@ hr{
     .intro_paragraphs p{
         margin: 25px 0 0;
     }
+    /* case study page */
+    .overview{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        align-items: center;
+    }
+    .info-block{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items:flex-start;
+    }
+    .project_img{
+        margin: 30px 0 0;
+    }
+    .section_title2{
+        margin: 0;
+    }
+    .projectInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .projectInfo h3{
+        margin-top: 0;
+    }
+    .info{
+        margin-bottom: 0;
+    }
+    .info p{
+        margin-bottom: 0;
+    }
+    .case_study_link{
+        margin-top: 80px ;
+    }
+    .divider_line{
+        margin-top: 20px;
+    }
 }
 
 
 @media screen and (min-width: 1200px) {
     .container{
-        max-width: 80%;
+        max-width: 75%;
     }
     main{
         margin: 150px auto;
-        max-width: 80%;
+        max-width: 75%;
     }
     .hero_intro{
         display: flex;
@@ -549,7 +676,7 @@ hr{
         margin: 60px 0;
     }
     #footer{
-        max-width: 80%;
+        max-width: 75%;
         margin: 80px auto 40px;
     }
     .contact_link{
@@ -564,5 +691,8 @@ hr{
     }
     .intro_paragraphs p{
         margin: 30px 0 0;
+    }
+   .demo_text{
+        width: 430px;
     }
 }
