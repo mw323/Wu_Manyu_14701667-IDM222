@@ -346,15 +346,19 @@ hr{
     text-decoration: none;
     color: white;
     border-radius: 30px;
-    padding: 6px 12px;
+    padding: 6px 15px;
     background-color: var(--button-color);
     font-size: var(--font-size-button);
     border: 1px solid var(--button-color);
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
+    font-weight: 600;
 }
 .arrow{
+    margin-right: 5px;
+}
+.arrow2{
+    margin-left: 5px;
+}
+.arrow, .arrow2{
     font-family: var(--font-arrow);
 }
 .project_name h1{
@@ -395,38 +399,41 @@ hr{
     text-align: right;
     margin: 50px 0 0;
 }
+/* slideshow */
 .demo_video {
     position: relative;
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
 }
-.demo_slide {
-    display: none;
+.slider video {
     width: 100%;
     border-radius: 20px;
+    display: none;
 }
-.demo_slide.active {
+.slider video:first-child {
     display: block;
+}
+.navBtn {
+    margin-top: 10px;
+    font-family: var(--font-arrow);
 }
 .slide_btn {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     border: none;
     background: none;
-    font-size: 35px;
+    font-size: 65px;
     cursor: pointer;
-    padding: 8px 12px;
-    font-family: var(--font-arrow);
     color: var(--font-border-color);
 }
 .prev_btn {
-    left: -50px;
+    left: -35px;
 }
 .next_btn {
-    right: -50px;
+    right: -35px; 
 }
-
 @media screen and (min-width: 768px) {
     .menu{
         gap: 100px;
@@ -518,7 +525,13 @@ hr{
     /* case study page */
     .back_btn{
         margin-bottom: 55px;
-}
+    }
+    .prev_btn {
+        left: -50px;
+    }
+    .next_btn {
+        right: -50px; 
+    }
 }
 
 @media screen and (min-width: 1024px) {
