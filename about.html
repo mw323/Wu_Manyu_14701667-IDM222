@@ -57,13 +57,17 @@
             </div>
         </div>
         <div class="selfie">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="images/myphoto_1200.webp">
-                <img
-                    src="images/myphoto_800.webp"
-                    alt="Manyu's selfie"
-                    class="selfie_photo">
-            </picture>
+            <img
+                src="images/myphoto_800.webp"
+                srcset="
+                    images/myphoto_400.webp 400w,
+                    images/myphoto_800.webp 800w,
+                    images/myphoto_1200.webp 1200w"
+                sizes="(max-width: 600px) 100vw,
+                (max-width: 1200px) 50vw, 33vw"
+                alt="selfie"
+                class="selfie_photo"
+                loading="lazy">
         </div>
     </main>
     
