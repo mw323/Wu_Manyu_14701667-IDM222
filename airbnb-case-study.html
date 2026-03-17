@@ -35,6 +35,9 @@
     </header>
 
     <main class="case-study">
+        <div class="back_btn">
+            <a href="projects.html" class="sub_btn"><span class="arrow">&#129120;</span>Back</a>
+        </div>
         <section class="overview">
             <div class="intro">
                 <div class="intro_subtitle">
@@ -51,7 +54,17 @@
                 </div>
             </div>
             <div>
-                <img src="images/airbnb_mockup.webp" alt=" airbnb mockup" class="project_img">
+                <img
+                    src="images/airbnb_mockup.webp"
+                    srcset="
+                        images/airbnb_mockup_small.webp 400w,
+                        images/airbnb_mockup.webp 800w,
+                        images/airbnb_mockup_large.webp 1200w"
+                     sizes="(max-width: 600px) 100vw,
+                    (max-width: 1200px) 50vw, 33vw"   
+                        alt="airbnb mockup"
+                        class="project_img"
+                        loading="lazy">
             </div>
         </section>
             <hr class="divider_line">
@@ -70,7 +83,17 @@
                         <h3>User Persona</h3>
                         <p>Sophie is a 24-year-old product designer from Atlanta who travels frequently for inspiration and relaxation. She values stylish, convenient, and well-designed stays near city centers, and she wants a smooth browsing experience with clear information and personalized recommendations to quickly find the right place.</p>
                         <div>
-                            <img src="images/user-persona-airbnb.webp" alt="user persona" class="project_img">
+                            <img
+                                src="images/user_persona_airbnb_800.webp"
+                                srcset="
+                                    images/user_persona_airbnb_400.webp 400w,
+                                    images/user_persona_airbnb_800.webp 800w,
+                                    images/user_persona_airbnb_1200.webp 1200w"
+                                sizes="(max-width: 600px) 100vw,
+                                (max-width: 1200px) 50vw, 33vw"   
+                                    alt="user persona"
+                                    class="project_img"
+                                    loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -116,49 +139,39 @@
                     <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
                     <h2>Prototype</h2>
                 </div>
-                <div class="projectInfo2">
-                   <div class="info2">
-                        <div class="demo_text">
-                            <h3>Horizontal layout and categorized browsing</h3>
-                            <p>The homepage was redesigned to include personalized categories such as For You and Popular, helping users quickly discover relevant listings.</p>
-                            <p>A Card Carousel replaced the long vertical feed, allowing users to swipe horizontally to browse listings.</p>
-                            <p>This change reduces excessive scrolling and makes the browsing experience more efficient.</p>
-                        </div>
-                        <div class="demo_video">
-                            <video autoplay loop muted>
-                                <source src="videos/homepage.webm" type="video/webm">
-                            </video>
-                        </div>
+                <div class="projectInfo">
+                    <div class="info">
+                        <h3>Horizontal layout and categorized browsing</h3>
+                        <p>The homepage was redesigned to include personalized categories such as For You and Popular. A Card Carousel replaced the long vertical feed, allowing users to swipe horizontally and browse more listings with less scrolling.</p>
                     </div>
-                    <div class="info2">
-                        <div class="demo_text">
-                            <h3>Tabbed information structure</h3>
-                            <p>Listing details were reorganized using a tabbed layout that separates key information into sections such as Overview, Amenities, Reviews, and Policies.</p>
-                            <p>This structure allows users to quickly switch between categories instead of scrolling through a long page.</p>
-                            <p>As a result, users can find the information they need more efficiently.</p>
-                        </div>
-                        <div class="demo_video">
-                            <video autoplay loop muted>
-                                <source src="videos/detail.webm" type="video/webm">
-                            </video>
-                        </div>
+                    <div class="info">
+                        <h3>Tabbed information structure</h3>
+                        <p>Listing details were reorganized using a tabbed layout that separates key information like Overview, Amenities, Reviews, and Policies. This structure makes it easier for users to find what they need quickly without endless scrolling.</p>
                     </div>
-                    <div class="info2">
-                        <div class="demo_text">
-                            <h3>Interaction Enhancement</h3>
-                            <p>While Airbnb’s existing payment process is already functional, I redesigned it to feel more engaging through motion and micro-interactions.</p>
-                            <p>I designed a vertical loop-scrolling card selector allows users to swipe through different payment options smoothly. When a card is selected, it expands to reveal the card information fields and a next button, creating a more seamless checkout experience.</p>
-                        </div>
-                        <div class="demo_video">
-                            <video autoplay loop muted>
-                                <source src="videos/payment.webm" type="video/webm">
-                            </video>
-                        </div>
+                    <div class="info">
+                        <h3>Interaction Enhancement</h3>
+                        <p>While Airbnb’s existing payment process is already straightforward and functional, I saw an opportunity to make it more engaging through motion and micro-interaction. I designed a vertical loop-scrolling payment selector that allows users to smoothly swipe through different types of cards in a continuous motion. 
+                        When a card is selected, it expands with an animated reveal showing the card information fields and a next button, creating a seamless and visually engaging checkout experience.</p>
+                    </div>
+                    <div class="demo_video">
+                        <video class="demo_slide active" autoplay loop muted playsinline>
+                            <source src="videos/homepage.webm" type="video/webm">
+                        </video>
+
+                        <video class="demo_slide" autoplay loop muted playsinline>
+                            <source src="videos/detail.webm" type="video/webm">
+                        </video>
+
+                        <video class="demo_slide" autoplay loop muted playsinline>
+                            <source src="videos/payment.webm" type="video/webm">
+                        </video>
+
+                        <button class="slide_btn prev_btn">&#129120;</button>
+                        <button class="slide_btn next_btn">&#129122;</button>
                     </div>
                 </div>
             </section>
             <hr class="divider_line">
-
             <section class="info-block">
                 <div class="section_title2">
                     <span class="star_icon"><img src="images/decoration.svg" alt="star" class="star"></span>
@@ -180,8 +193,8 @@
                 </div>
             </section>
 
-        <div class="case_study_link">
-            <a href="zara-case-study.html" class="next_btn">Previous Case Study</a>
+       <div class="case_study_link">
+            <a href="zara-case-study.html" class="sub_btn">Previous<span class="arrow">&#129122;</span></a>
         </div>
     </main>
 
@@ -206,7 +219,7 @@
                 <a href="index.html" class="pages">Home</a>
                 <a href="about.html" class="pages">About</a>
                 <a href="projects.html" class="pages">Projects</a>
-                <a href="#footer" class="pages">Contact</a>
+                <a href="resume.html" class="pages">Resume</a>
                 </div>
             <div class="small_text">
                 <span class>&copy; Manyu Wu 2026</span>
