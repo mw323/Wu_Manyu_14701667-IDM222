@@ -17,33 +17,26 @@
     --font-border-color: #34566F;
     --button-color: #438EBF;
 
-    --large-h1: 5rem;
-    --large-h2: 3.5rem;
-    --large-h3: 2.25rem;
+    --large-h1: 3rem;
+    --large-h2: 2.25rem;
+    --large-h3: 1.75rem;
     --large-subheading: 1.5rem;
     --large-body: 1.125rem;
     --large-link: 1.125rem;
 
-    --medium-h1: 3.4375rem;
-    --medium-h2: 2.25rem;
-    --medium-h3: 1.75rem;
-    --medium-subheading: 1.5rem;
-    --medium-body: 1.125rem;
-    --medium-link: 1.25rem;
-
-    --small-h1: 2.375rem;
-    --small-h2: 1.625rem;
+    --small-h1: 2.25rem;
+    --small-h2: 1.75rem;
     --small-h3: 1.375rem;
     --small-subheading: 1.125rem;
-    --small-link: 1.0625rem;
     --small-body: 1rem;
+    --small-link: 1.25rem;
 
     --font-size-button: 1rem;
     --font-size-label: 1rem;
 
     --font-main: "Playfair", "Times New Roman", serif;
+    --font-arrow: system-ui, sans-serif;
     
-    --nav-height: 48px;
     --mobile-margin: 24px;
     --tablet-margin: 48px;
     --laptop-margin: 72px;
@@ -62,12 +55,37 @@ html{
 body{
     color: var(--font-border-color);
 }
+body h1{
+    font-size: var(--small-h1);
+}
+
+body h2{
+    font-size: var(--small-h2);
+}
+
+body h3{
+    font-size: var(--small-h3);
+}
+body h4{
+    font-size: var(--small-subheading);
+}
+body p{
+    font-size: var(--small-body);
+    line-height: var(--line-height-p);
+}
+.button{
+    font-size: var(--font-size-button);
+}
 main{
     font-family: var(--font-main);
     margin: 120px var(--mobile-margin) 80px;
-
 }
 
+hr{
+    border: 0.5px solid var(--font-border-color);
+    margin: 20px 0;
+}
+/* navigation */
 .navbar{
     background-color: var(--bg-color);
     position: fixed;
@@ -76,7 +94,6 @@ main{
     z-index: 1;
     border-bottom: 0.8px solid var(--font-border-color);
 }
-
 .container{
     max-width: 90%;
     margin: auto;
@@ -86,37 +103,28 @@ main{
     justify-content: space-between;
     padding: 10px 0; 
 }
-
 .logo{
     width: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    vertical-align: middle;
 }
-
 .closeIcon{
     display: none;
 }
-
 .hamburger{
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.menuItem{
-    text-decoration: none;
-    color: var(--font-border-color);
-    font-family: var(--font-main);
-    font-size: 22px;
+.menuItem, .menuItem2{
+    text-decoration:none;
+    color:var(--font-border-color);
+    font-family:var(--font-main);
+    font-size:var(--small-link);
 }
 .menuItem2{
-    text-decoration: none;
-    border: 1px solid var(--font-border-color);
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: var(--font-border-color);
-    font-family: var(--font-main);
-    font-size: 22px;
+    border:1px solid var(--font-border-color);
+    border-radius:20px;
+    padding:5px 10px;
 }
 .menuItem2:hover{
     background-color: var(--font-border-color);
@@ -146,45 +154,40 @@ main{
     opacity: 0;
     visibility: hidden;
 }
-.hero_img img{ 
+/* hero section */
+.hero_img img{
     width: 100%;
     height: auto;
 }
 .hero_img{
     margin: 30px 0 0;
 }
-
 .hero_intro{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .hero_subtitle{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 .hero_subtitle h2{
     margin: 0;
-    font-size: var(--small-h2);
 }
 .star{
     width: 20px;
     vertical-align: middle;
-
 }
 .text_area h1{
-    font-size: var(--small-h1);
-    line-height: 1.3;
     margin: 10px 0;
 }
 .text_area p{
-    font-size: var(--small-subheading);
     margin-top: 15px;
-    line-height: 1.4;
+    font-size: var(--small-subheading);
 }
 .hero_button{
-    margin: 35px 0 20px;
+    margin: 35px 0 0;
 }
 .button{
     text-decoration: none;
@@ -192,19 +195,17 @@ main{
     border-radius: 30px;
     padding: 10px 24px;
     background-color: var(--button-color);
-    font-size: var(--font-size-button);
     border: 1px solid var(--button-color);
 }
+/* project section */
 .section_title{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
     margin-top: 80px;
 }
 .section_title h2{
-    font-size: var(--small-h2);
     margin: 0;
 }
 .image_block{
@@ -213,8 +214,8 @@ main{
     align-items: center;
 }
 .display_image{
-    max-width: 100%;
-    height: auto;
+    max-width:100%;
+    height:auto;
     margin: 25px 0 0;
     border-radius: 10px;
     border: 1px solid var(--font-border-color);
@@ -223,13 +224,11 @@ main{
     margin: 20px 0 0;
 }
 .text_block h2{
-    font-size: var(--small-h2);
     margin: 20px 0;
 }
 .text_block p{
-    margin: 20px 0 45px;
+    margin: 20px 0 60px;
     text-wrap: pretty;
-    line-height: var(--line-height-p);
 }
 .tags{
     display: flex;
@@ -266,12 +265,12 @@ main{
     display: flex;
     justify-content: center;
 }
+/* footer */
 #footer{
     margin: 70px var(--mobile-margin) 0;
 }
 #footer h2{
     margin: 0;
-    font-size: var(--small-h2);
 }
 .contact{
     display: flex;
@@ -279,14 +278,8 @@ main{
     justify-content: space-between;
     margin: 0;
 }
-hr{
-    border: 0.5px solid var(--font-border-color);
-    margin: 20px 0;
-}
-
 .contact_info{
     display: flex;
-    flex-direction: row;
     gap: 15px;
 }
 .contact_link{
@@ -312,14 +305,17 @@ hr{
     font-size: var(--small-subheading);
     color: var(--font-border-color);
 }
+.pages:hover{
+    text-decoration: underline;
+    color: var(--button-color);
+}
 .small_text{
     margin: 20px 0;
     text-align: center;
 }
-/* about page */ 
+/* about page */
 .about_title{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 5px;
 }
@@ -334,19 +330,34 @@ hr{
     height: auto;
 }
 .intro_paragraphs h3{
-    font-size: var(--small-h3);
     margin: 15px 0 20px;
 }
 .intro_paragraphs p{
-    line-height: var(--line-height-p);
     margin: 20px 0 0;
 }
 .resume{
     margin: 40px 0 0;
 }
 /* case study page */
+.back_btn{
+    margin-bottom: 40px;
+}
+.sub_btn{
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    padding: 6px 12px;
+    background-color: var(--button-color);
+    font-size: var(--font-size-button);
+    border: 1px solid var(--button-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.arrow{
+    font-family: var(--font-arrow);
+}
 .project_name h1{
-    font-size: var(--small-h1);
     margin: 15px 0 20px;
 }
 .intro_subtitle h4{
@@ -357,8 +368,7 @@ hr{
     margin: 15px 0;
 }
 .case-study p{
-    line-height: var(--line-height-p);
-    margin: 0 0 15px;
+    margin: 0;
 }
 .info{
     margin-bottom: 30px;
@@ -367,13 +377,13 @@ hr{
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 10px;
 }
 .prototype_button{
-    margin: 40px 0;
+    margin: 40px 0 55px;
 }
 .section_title2{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 5px;
     margin: 25px 0;
@@ -382,30 +392,42 @@ hr{
     margin: 0;
 }
 .case_study_link{
-    text-align: center;
+    text-align: right;
     margin: 50px 0 0;
 }
-.next_btn{
-    text-decoration: none;
+.demo_video {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.demo_slide {
+    display: none;
+    width: 100%;
+    border-radius: 20px;
+}
+.demo_slide.active {
+    display: block;
+}
+.slide_btn {
+    position: absolute;
+    top: 50%;
+    border: none;
+    background: none;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-family: var(--font-arrow);
     color: var(--font-border-color);
-    border: 1px solid var(--font-border-color);
-    padding: 10px;
 }
-.next_btn:hover{
-    background-color: var(--font-border-color);
-    color: white;
+.prev_btn {
+    left: -50px;
 }
-.demo_video{
-    width:300px;
-    margin: 0  auto;
+.next_btn {
+    right: -50px;
 }
-video{
-  width: 100%;
-}
+
 @media screen and (min-width: 768px) {
-    .container{
-        max-width: 90%;
-    }
     .menu{
         gap: 100px;
         padding-top: 180px;
@@ -414,14 +436,13 @@ video{
         margin: 130px var(--tablet-margin) 0;
     }
     hr{
-        margin: 50px 0;
+        margin: 20px 0;
     }
     .hero_intro{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
-        gap: 25px;
+        justify-content: space-between;
     }
     .hero_img{
         margin: 0;
@@ -448,7 +469,7 @@ video{
         margin: 0;
     }
     .text_block h2{
-        margin: 20px 0 15px;
+        margin: 10px 0;
     }
     .display_image{
         width: 850px;
@@ -460,9 +481,6 @@ video{
     }
     .project_btn{
         margin-top: 60px;
-    }
-    hr{
-        margin: 20px 0;
     }
     #footer{
         margin: 100px var(--tablet-margin) 30px;
@@ -498,27 +516,26 @@ video{
         margin: 20px 0;
     }
     /* case study page */
-    .project_img{
-        margin-top: 20px;
-    }
-    .info2{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 40px;
-    }
-    .demo_text{
-        width: 400px;
-    }
-    .projectInfo2{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
+    .back_btn{
+        margin-bottom: 55px;
+}
 }
 
 @media screen and (min-width: 1024px) {
     .container{
         max-width: 85%;
+    }
+    body h1{
+        font-size: var(--large-h1);
+    }
+    body h2{
+        font-size: var(--large-h2);
+    }
+    body h3{
+        font-size: var(--large-h3);
+    }
+    body p{
+        font-size: var(--large-body);
     }
     .hamburger{
         display: none;
@@ -536,22 +553,11 @@ video{
         transform: none;
         transition: none;
     }
-    .menuItem{
-        font-size: 18px;
-    }
-    .menuItem2{
-        font-size: 18px;
+    .menuItem, .menuItem2{
+        font-size: var(--large-link);
     }
     main{
         margin: 140px var(--laptop-margin) 80px;
-    }
-    .hero_intro{
-        display: flex;
-        justify-content: flex-start;
-        gap: 50px;
-    }
-    .hero_img{
-        width: 400px; 
     }
     .star{
         width: 25px;
@@ -560,39 +566,26 @@ video{
     .text_area{
         max-width: 700px;
     }
-    .text_area h2{
-        font-size: var(--medium-h2);
-    }
-    .text_area h1{
-        font-size: var(--medium-h1);
-    }
     .text_area p{
-        font-size: var(--medium-subheading);
+        font-size: var(--large-subheading);
     }
     #footer{
-        margin: 50px var(--laptop-margin) 40px;
+        margin: 0 var(--laptop-margin) 40px;
     }
-     #footer h2{
-        font-size: var(--medium-h2);
-    }
-    .section_title h2{
-        font-size: var(--medium-h2);
-    }
-     /* about page */
-     .about_me h2{
-        font-size: var(--medium-h2);
-    }
-    .about_me h3{
-        font-size: var(--medium-h3);
-    }
-    .about_me p{
-        font-size: var(--medium-body);
+    /* about page */
+    .about{
+        margin-bottom: 120px;
     }
     .intro_paragraphs h3{
         margin: 25px 0;
     }
     .intro_paragraphs p{
         margin: 25px 0 0;
+    }
+    .selfie_photo{
+        width: 100%;
+        height: auto;
+        max-width: 400px;
     }
     /* case study page */
     .overview{
@@ -606,8 +599,11 @@ video{
         grid-template-columns: 1fr 1.5fr;
         align-items:flex-start;
     }
+    .prototype_button{
+        margin-bottom: 30px;
+    }
     .project_img{
-        margin: 30px 0 0;
+        margin: 0;
     }
     .section_title2{
         margin: 0;
@@ -624,14 +620,15 @@ video{
         margin-bottom: 0;
     }
     .info p{
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     .case_study_link{
         margin-top: 80px ;
     }
     .divider_line{
-        margin-top: 20px;
+        margin: 30px 0;
     }
+
 }
 
 
@@ -643,22 +640,17 @@ video{
         margin: 150px auto;
         max-width: 75%;
     }
-    .hero_intro{
-        display: flex;
-        justify-content: space-between;
+    .hero_img{
+        width: 400px;
     }
     .text_area h1{
         margin: 10px 0;
     }
+    .hero_button{
+        margin: 50px 0 0;
+    }
     .section_title{
         margin: 150px 0 50px;
-    }
-    .text_block h2{
-        font-size: var(--medium-h2);
-        margin: 25px 0;
-    }
-    .text_block p{
-        font-size: var(--medium-body);
     }
     .project_btn{
         margin: 80px 0 0;
@@ -668,13 +660,7 @@ video{
     }
     #footer{
         max-width: 75%;
-        margin: 80px auto 40px;
-    }
-    .contact_link{
-        border: 1.5px solid var(--font-border-color);
-    }
-    .hero_button{
-        margin: 50px 0 0;
+        margin: 0 auto 40px;
     }
     /* about page */
     .about{
@@ -683,7 +669,7 @@ video{
     .intro_paragraphs p{
         margin: 30px 0 0;
     }
-   .demo_text{
-        width: 430px;
+    .selfie_photo{
+        width: 350px;
     }
 }
