@@ -71,7 +71,7 @@ function applyTheme(isDark) {
         document.body.classList.add("dark-mode");
         localStorage.setItem("theme", "dark");
 
-        icon.src = "images/moon.svg";
+        icon.src = "images/sun.svg";
         logo.src = "images/logo-dark.svg";
         menuIcon.src = "images/menu-dark.svg";
         closeIcon.src = "images/close-dark.svg";
@@ -87,7 +87,7 @@ function applyTheme(isDark) {
         document.body.classList.remove("dark-mode");
         localStorage.setItem("theme", "light");
 
-        icon.src = "images/sun.svg";
+        icon.src = "images/moon.svg";
         logo.src = "images/logo-light.svg";
         menuIcon.src = "images/menu-light.svg";
         closeIcon.src = "images/close-light.svg";
